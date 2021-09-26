@@ -6,7 +6,7 @@
 .container {
 	max-width: 950px;
 	width: 100%;
-	height: 560px;
+	height: 500px;
 	margin: 0 auto;
 	position: relative;
 	background-image: url("images/background.jpg");
@@ -23,16 +23,65 @@
 	height: 200px;
 	animation-name: redcardanime;
 	animation-duration: 6s;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 	animation-timing-function: linear;
 	animation-fill-mode: backwards;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	background-image: url("images/red car.png");
 }
 @keyframes redcardanime {
-	from {
-		top: 5px;
+	0% {
+		top: 300px;
+		left: 0;
+	}
+	100% {
+		top: 300px;
+		left: 800px;
+	}
+}
+.bluecar {
+	position: absolute;
+	background-image: url("images/blue car.png");
+	width: 200px;
+	height: 200px;
+	animation-name: bluecaranime;
+	animation-duration: 6s;
+	animation-delay: 0.3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+}
+@keyframes bluecaranime {
+	0% {
+		top: 300px;
+		right: 0;
 
 	}
-	to {
-		top: 500px;
+	100% {
+		top: 300px;
+		right: 850px;
 	}
+}
+.sun {
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	animation-name: sunanime;
+	animation-duration: 6s;
+	animation-delay: 0.3s;
+	animation-timing-function: linear; 
+	animation-fill-mode: backwards;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+}
+@keyframes sunanime {
+	from {
+		top: -300px;
+		left: 20px;
+	}
+	to {
+		top: -300px;
+		left: 60px;
 }
