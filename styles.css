@@ -2,9 +2,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	max-width: 1107px;
 }
 .container {
-	max-width: 366px;
+	max-width: 1107px;
 	width: 100%;
 	height: 560px;
 	margin: 0 auto;
@@ -37,7 +38,7 @@
 	}
 	100% {
 		top: 65%;
-		left: 100%;
+		left: 760px;
 	}
 }
 .pinkcar {
@@ -57,12 +58,11 @@
 @keyframes pinkcaranime {
 	0% {
 		top: 70%;
-		right: 0;
-
+		right:0;
 	}
 	100% {
 		top: 70%;
-		right: 100%;
+		right: 820px;
 	}
 }
 .sun {
